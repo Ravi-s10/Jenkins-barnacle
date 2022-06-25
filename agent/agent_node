@@ -1,0 +1,13 @@
+pipeline{
+    node {
+        label "slave 1"
+        customeworkspace "/home/ravi/jenkins"
+    }
+    stages{
+        stage("Building in custome workspace"){
+            steps{
+                echo "hello Agent"
+            }
+        }
+    }
+}
