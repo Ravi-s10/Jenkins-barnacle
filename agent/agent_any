@@ -1,0 +1,17 @@
+pipeline {
+
+agent any 
+
+stages{
+
+stage("Testing agent")
+{
+steps{
+
+sh "echo Hello Agent"
+
+}
+}
+}
+}
+
